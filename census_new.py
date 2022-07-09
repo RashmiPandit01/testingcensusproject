@@ -54,6 +54,6 @@ pages_dict = {"Home": home,"Visualise Data": plots}
 st.sidebar.title('Navigation')
 user_choice = st.sidebar.radio("Go to", tuple(pages_dict.keys()))
 if user_choice == "Home":
-    home.app()
+    home.app(census_df)
 else:
-    plots.app()
+    plots.app(census_df)
