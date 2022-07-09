@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 # Define a function 'app()' which accepts 'census_df' as an input.
-def app(census_new):
+def app(census_df):
     st.header("View Data")
     # Display dataset within beta_expander.
     with st.beta_expander("View Dataset"):
